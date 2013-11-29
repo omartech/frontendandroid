@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <android.view.SurfaceView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.view.SurfaceView>
+
+        <TextView
+            android:id="@+id/fp_process"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dip"
+            android:gravity="top|center_horizontal"
+            android:text="@string/process"
+            android:textColor="#FFFFFF"
+            android:textSize="20dip" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-60dip"
+        android:background="@android:drawable/bottom_bar"
+        android:gravity="bottom|center"
+        android:padding="0dip" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:text="@string/camera_capture" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -228,8 +228,8 @@ public class CameraActivity extends Activity implements OnClickListener {
 				Log.i(TAG, "*** Before WS call ***");
 				NAMESPACE = "http://services.hubino.omar.com/";
 				URL = "http://146.185.160.54:8080/ajmWeb/services/OmerWeb?wsdl";
-				SOAP_ACTION = "androidService";
-		    	METHOD_NAME = "androidService";
+				SOAP_ACTION = "initiateFaceEngine";
+		    	METHOD_NAME = "initiateFaceEngine";
             	try{
 	        		SoapObject request = new SoapObject(NAMESPACE, METHOD_NAME);
 	        		
